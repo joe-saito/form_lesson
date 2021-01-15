@@ -236,11 +236,11 @@
   margin-bottom: 0;
 }
 
-.form_from {
+.form_origin {
   position: relative;
 }
 
-.form_from::after {
+.form_origin::after {
   content: "";
   display: inline-block;
   position: absolute;
@@ -307,6 +307,12 @@
   font-size: 12px;
   margin-bottom: 8px;
   line-height: 16px;
+}
+
+.footer a:hover{
+  box-sizing: border-box;
+  border-bottom: solid 1px #ececec;
+  border-bottom-color:  #01bfbd;
 }
 
 .resend-mail {

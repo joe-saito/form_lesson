@@ -29,30 +29,30 @@
           <div class="form_name title-margin">
             <div class="name width-is-half">
               <p class="form_common-text">名字<span class="alert"> ※</span></p>
-              <input type="text" name="last_name" class="input-area input-init">
+              <input type="text" name="last_name" class="input-area input-init" required>
             </div>
             <div class="name width-is-half">
               <p class="form_common-text">名前<span class="alert"> ※</span></p>
-              <input type="text" name="first_name" class="input-area input-init">
+              <input type="text" name="first_name" class="input-area input-init" required>
             </div>
           </div>
           <div class="form_gender title-margin">
             <p class="form_common-text width-is-full">性別</p>
             <div class="gender-contents">
               <label class="form_gender-label">
-                <input type="radio" name="sex" value="male" class="gender-input"><span class="gender-radio">男性</span>
+                <input type="radio" name="gender" value="male" class="gender-input"><span class="gender-radio">男性</span>
               </label>
-              <label value="male" class="form_gender-label">
-                <input type="radio" name="sex" value="male" class="input-init gender-input"><span class="gender-radio">女性</span>
+              <label class="form_gender-label">
+                <input type="radio" name="gender" value="female" class="gender-input"><span class="gender-radio">女性</span>
               </label>
-              <label value="male" class="form_gender-label">
-                <input type="radio" name="sex" value="male" class="input-init gender-input"><span class="gender-radio">その他</span>
+              <label class="form_gender-label">
+                <input type="radio" name="gender" value="other" class="gender-input"><span class="gender-radio">その他</span>
               </label>
             </div>
           </div>
-          <div class="form_from width-is-half title-margin">
+          <div class="form_origin width-is-half title-margin">
             <p class="form_common-text width-is-full">出身</p>
-            <select name="from" class="input-init input-area width-is-half">
+            <select name="origin" class="input-init input-area width-is-half">
               <option value="tokyo">東京</option>
               <option value="chiba">千葉</option>
               <option value="saitama">埼玉</option>
@@ -61,7 +61,7 @@
           </div>
           <div class="form_email title-margin">
             <p class="form_common-text width-is-full">Eメール<span class="alert"> ※</span></p>
-            <input type="text" name="e-mail" placeholder="ex) hoge@example.com" class="input-init input-area width-is-full">
+            <input type="email" name="email" placeholder="ex) hoge@example.com" class="input-init input-area width-is-full" required>
           </div>
           <div class="form_tel title-margin">
             <p class="form_common-text width-is-full">電話番号</p>
@@ -70,11 +70,11 @@
           <div class="form_pass">
             <div class="form_pass-input title-margin">
               <p class="form_common-text width-is-full">パスワード<span class="alert"> ※</span></p>
-              <input type="password" name="pass" class="input-init input-area width-is-full">
+              <input type="password" name="password" required class="input-init input-area width-is-full">
             </div>
             <div class="form_pass-input title-margin">
               <p class="form_common-text width-is-full">パスワード(確認用)<span class="alert"> ※</span></p>
-              <input type="password" name="pass" class="input-init input-area width-is-full">
+              <input type="password" name="password-confirm" required class="input-init input-area width-is-full">
             </div>
           </div>
           <div class="form_course title-margin">
